@@ -4,11 +4,16 @@ from building import *
 cwd     = GetCurrentDir()
 
 # The set of source files associated with this SConscript file.
+
+# mupdf
 src     = Glob('cbz/*.c')
 src    += Glob('draw/*.c')
 src    += Glob('fitz/*.c')
 src    += Glob('pdf/*.c')
 src    += Glob('xps/*.c')
+
+# mupdf for rtt port
+src    += Glob('port/*.c')
 
 # freetype
 src    += Split('''
