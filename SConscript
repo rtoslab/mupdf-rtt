@@ -94,6 +94,32 @@ src    += Split('''
     thirdparty/jpeg/jutils.c \
 ''')
 
+src    += Split('''
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/bio.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/cio.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/dwt.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/event.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/image.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/j2k.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/j2k_lib.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/jp2.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/jpt.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/mct.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/mqc.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/openjpeg.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/pi.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/raw.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/t1.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/t2.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/tcd.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/tgt.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/cidx_manager.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/phix_manager.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/ppix_manager.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/thix_manager.c \
+    thirdparty/openjpeg-1.5.0-patched/libopenjpeg/tpix_manager.c \
+''')
+
 path    = [cwd + '/']
 path   += [cwd + '/fitz']
 path   += [cwd + '/pdf']
