@@ -42,6 +42,24 @@ src    += Split('''
     thirdparty/freetype/src/winfonts/winfnt.c \
 ''')
 
+src    += Split('''
+    thirdparty/jbig2dec/jbig2_arith.c \
+    thirdparty/jbig2dec/jbig2_arith_int.c \
+    thirdparty/jbig2dec/jbig2_arith_iaid.c \
+    thirdparty/jbig2dec/jbig2_huffman.c \
+    thirdparty/jbig2dec/jbig2_segment.c \
+    thirdparty/jbig2dec/jbig2_page.c \
+    thirdparty/jbig2dec/jbig2_symbol_dict.c \
+    thirdparty/jbig2dec/jbig2_text.c \
+    thirdparty/jbig2dec/jbig2_halftone.c \
+    thirdparty/jbig2dec/jbig2_generic.c \
+    thirdparty/jbig2dec/jbig2_refinement.c \
+    thirdparty/jbig2dec/jbig2_mmr.c \
+    thirdparty/jbig2dec/jbig2_image.c \
+    thirdparty/jbig2dec/jbig2_metadata.c \
+    thirdparty/jbig2dec/jbig2.c \
+''')
+
 path    = [cwd + '/']
 path   += [cwd + '/fitz']
 path   += [cwd + '/pdf']
