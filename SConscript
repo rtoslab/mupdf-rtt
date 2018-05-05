@@ -5,6 +5,7 @@ cwd     = GetCurrentDir()
 
 # The set of source files associated with this SConscript file.
 src     = Glob('cbz/*.c')
+src     = Glob('draw/*.c')
 
 path    = [cwd + '/']
 path   += [cwd + '/fitz']
