@@ -60,6 +60,40 @@ src    += Split('''
     thirdparty/jbig2dec/jbig2.c \
 ''')
 
+src    += Split('''
+    thirdparty/jpeg/jaricom.c \
+    thirdparty/jpeg/jcomapi.c \
+    thirdparty/jpeg/jdapimin.c \
+    thirdparty/jpeg/jdapistd.c \
+    thirdparty/jpeg/jdarith.c \
+    thirdparty/jpeg/jdatadst.c \
+    thirdparty/jpeg/jdatasrc.c \
+    thirdparty/jpeg/jdcoefct.c \
+    thirdparty/jpeg/jdcolor.c \
+    thirdparty/jpeg/jddctmgr.c \
+    thirdparty/jpeg/jdhuff.c \
+    thirdparty/jpeg/jdinput.c \
+    thirdparty/jpeg/jdmainct.c \
+    thirdparty/jpeg/jdmarker.c \
+    thirdparty/jpeg/jdmaster.c \
+    thirdparty/jpeg/jdmerge.c \
+    thirdparty/jpeg/jdpostct.c \
+    thirdparty/jpeg/jdsample.c \
+    thirdparty/jpeg/jdtrans.c \
+    thirdparty/jpeg/jerror.c \
+    thirdparty/jpeg/jfdctflt.c \
+    thirdparty/jpeg/jfdctfst.c \
+    thirdparty/jpeg/jfdctint.c \
+    thirdparty/jpeg/jidctflt.c \
+    thirdparty/jpeg/jidctfst.c \
+    thirdparty/jpeg/jidctint.c \
+    thirdparty/jpeg/jmemmgr.c \
+    thirdparty/jpeg/jmemnobs.c \
+    thirdparty/jpeg/jquant1.c \
+    thirdparty/jpeg/jquant2.c \
+    thirdparty/jpeg/jutils.c \
+''')
+
 path    = [cwd + '/']
 path   += [cwd + '/fitz']
 path   += [cwd + '/pdf']
