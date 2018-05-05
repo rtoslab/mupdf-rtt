@@ -16,6 +16,7 @@ path   += [cwd + '/pdf']
 path   += [cwd + '/generated']
 
 path   += [cwd + '/thirdparty/freetype/include']
+path   += [cwd + '/thirdparty/jpeg/']
 path   += [cwd + '/thirdparty/zlib']
 
 path   += [cwd + '/port']
