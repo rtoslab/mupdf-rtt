@@ -10,6 +10,7 @@ src     = Glob('pdf/*.c')
 
 path    = [cwd + '/']
 path   += [cwd + '/fitz']
+path   += [cwd + '/generated']
 
 path   += [cwd + '/thirdparty/zlib']
 
