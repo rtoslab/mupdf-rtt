@@ -12,6 +12,7 @@ src    += Glob('xps/*.c')
 
 path    = [cwd + '/']
 path   += [cwd + '/fitz']
+path   += [cwd + '/pdf']
 path   += [cwd + '/generated']
 
 path   += [cwd + '/thirdparty/freetype/include']
