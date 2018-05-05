@@ -10,6 +10,7 @@ src    += Glob('fitz/*.c')
 src    += Glob('pdf/*.c')
 src    += Glob('xps/*.c')
 
+# freetype
 src    += Split('''
     thirdparty/freetype/src/base/ftbase.c \
     thirdparty/freetype/src/base/ftbbox.c \
@@ -42,6 +43,7 @@ src    += Split('''
     thirdparty/freetype/src/winfonts/winfnt.c \
 ''')
 
+# jbig2dec
 src    += Split('''
     thirdparty/jbig2dec/jbig2_arith.c \
     thirdparty/jbig2dec/jbig2_arith_int.c \
@@ -60,6 +62,7 @@ src    += Split('''
     thirdparty/jbig2dec/jbig2.c \
 ''')
 
+# jpeg
 src    += Split('''
     thirdparty/jpeg/jaricom.c \
     thirdparty/jpeg/jcomapi.c \
@@ -94,6 +97,7 @@ src    += Split('''
     thirdparty/jpeg/jutils.c \
 ''')
 
+# openjpeg
 src    += Split('''
     thirdparty/openjpeg/libopenjpeg/bio.c \
     thirdparty/openjpeg/libopenjpeg/cio.c \
@@ -118,6 +122,20 @@ src    += Split('''
     thirdparty/openjpeg/libopenjpeg/ppix_manager.c \
     thirdparty/openjpeg/libopenjpeg/thix_manager.c \
     thirdparty/openjpeg/libopenjpeg/tpix_manager.c \
+''')
+
+# zlib
+src    += Split('''
+    thirdparty/zlib/adler32.c \
+    thirdparty/zlib/compress.c \
+    thirdparty/zlib/crc32.c \
+    thirdparty/zlib/deflate.c \
+    thirdparty/zlib/inffast.c \
+    thirdparty/zlib/inflate.c \
+    thirdparty/zlib/inftrees.c \
+    thirdparty/zlib/trees.c \
+    thirdparty/zlib/uncompr.c \
+    thirdparty/zlib/zutil.c \
 ''')
 
 path    = [cwd + '/']
