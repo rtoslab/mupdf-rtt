@@ -55,6 +55,8 @@ path   += [cwd + '/thirdparty/zlib']
 
 path   += [cwd + '/port']
 
-group = DefineGroup('mupdf', src, depend = ['PKG_USING_MUPDF'], CPPPATH = path)
+CPPDEFINES  = ['FT2_BUILD_LIBRARY', 'HAVE_STDINT_H']
+
+group = DefineGroup('mupdf', src, depend = ['PKG_USING_MUPDF'], CPPDEFINES = CPPDEFINES, CPPPATH = path)
 
 Return('group')
