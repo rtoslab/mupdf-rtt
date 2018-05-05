@@ -128,6 +128,7 @@ path   += [cwd + '/generated']
 path   += [cwd + '/thirdparty/freetype/include']
 path   += [cwd + '/thirdparty/jbig2dec']
 path   += [cwd + '/thirdparty/jpeg']
+path   += [cwd + '/thirdparty/openjpeg']
 path   += [cwd + '/thirdparty/openjpeg/libopenjpeg']
 path   += [cwd + '/thirdparty/zlib']
 
