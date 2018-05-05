@@ -12,6 +12,7 @@ path    = [cwd + '/']
 path   += [cwd + '/fitz']
 path   += [cwd + '/generated']
 
+path   += [cwd + '/thirdparty/freetype/include']
 path   += [cwd + '/thirdparty/zlib']
 
 path   += [cwd + '/port']
