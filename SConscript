@@ -1,9 +1,14 @@
 from building import *
 
+# get current directory
 cwd     = GetCurrentDir()
-src     = Glob('cbz/*.c')
-CPPPATH = [cwd]
 
-group = DefineGroup('mupdf', src, depend = ['PKG_USING_MUPDF'], CPPPATH = CPPPATH)
+# The set of source files associated with this SConscript file.
+src     = Glob('cbz/*.c')
+
+path    = [cwd + '/']
+path   += [cwd + '/fitz']
+
+group = DefineGroup('mupdf', src, depend = ['PKG_USING_MUPDF'], CPPPATH = path)
 
 Return('group')
