@@ -7,6 +7,7 @@ cwd     = GetCurrentDir()
 src     = Glob('cbz/*.c')
 src     = Glob('draw/*.c')
 src     = Glob('pdf/*.c')
+src     = Glob('xps/*.c')
 
 path    = [cwd + '/']
 path   += [cwd + '/fitz']
